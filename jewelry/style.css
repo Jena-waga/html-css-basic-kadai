@@ -1,0 +1,107 @@
+html{
+  font-family: 'Crimson Text', serif;
+  font-family: 'Josefin Sans', sans-serif;
+}
+header{
+  width: 90vw;
+  display: flex;
+  align-items: center;
+  padding: 32px 50px;
+  margin-bottom: 50px;
+}
+.logo{
+  width: 110px;
+  line-height: 1;
+  /* padding: 0 50px 50px 50px; */
+  margin-right: 50px;
+}
+.logo img{
+  width: 100%;
+}
+ul{
+  display: flex;
+  column-gap: 30px;
+}
+ul li{
+  font-size: 0.875rem;
+}
+#mainvisual{
+  width: 100%;
+  height: auto;
+  padding: 30px 50px 30px 50px;
+}
+#mainvisual img{
+  width: 100%;
+}
+main{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+#concept{
+  display: flex;
+  align-items: center;
+}
+#concept div{
+  width: 50%;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+}
+#concept div img{
+  width: 100%;
+}
+#concept-div h2,p,span{
+  text-align: left;
+}
+h2{
+  font-size: 25px;
+}
+span{
+  margin-bottom: 30px;
+}
+textarea{
+  margin: 20px;
+}
+#work{
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+#work div{
+  width: 50%;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+#work div img{
+  width: 100%;
+}
+#work-div h2,p,span{
+  text-align: left;
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width:767px) {
+  main > section{
+    display: block;
+    flex-direction: column;
+  }
+  #mainvisual{
+    padding: 0;
+  }
+  #work{
+    flex-direction: column;
+  }
+  #work div{
+    width: 100%;
+  }
+  #concept div{
+    width: 100%;
+  }
+}
